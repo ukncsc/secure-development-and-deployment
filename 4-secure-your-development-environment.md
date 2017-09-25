@@ -42,13 +42,13 @@ The following measures can help you to understand and reduce these risks:
 
 * **Consider your development environment compromised**
 
-  If an attacker is able to compromise a developer's environment they will inherit the same level of permissions and access as that developer. Placing additional controls between your developer environments and critical systems will help to reduce this impact.  
+  If an attacker is able to compromise a developer's environment they will inherit the same level of permissions and access as that developer. Placing additional controls between your developer environments and critical systems will help to reduce this impact.
 
-  For example, the use of multi-factor authentication will make it harder for an attacker to leverage stolen credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.  
+  For example, the use of multi-factor authentication will make it harder for an attacker to leverage stolen credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.
 
 * **Trust your developers, verify their actions**
 
-  People are not the weakest link, they are the first line of defence. Security-savvy individuals can sometimes be better at detecting and preventing attacks than technical controls.  
+  People are not the weakest link, they are the first line of defence. Security-savvy individuals can sometimes be better at detecting and preventing attacks than technical controls.
 
   Trust can be placed in individuals who are security aware and strive to do the right thing. Investing in monitoring and auditing controls will help you to verify this is happening. Examples include network monitoring to detect suspicious activity, checking patch levels and verifying software that users are installing.
 
@@ -74,7 +74,7 @@ The following measures can help you to understand and reduce these risks:
   Managing production ('live') services from development environments can be high risk. In situations where this is required, try to limit the exposure of your production services. Consider models for [least privileged](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material) access management and temporary access credentials through a request process. System [managment interfaces](https://www.ncsc.gov.uk/blog-post/protect-your-management-interfaces) are important to secure, but out of scope for this guidance.
 
 * **Apply network architecture controls**  
-  In the event that developer devices are compromised, constrain their onward access with wider network architecture controls that supports defence in depth. Examples may include firewall rule sets only permitting developer devices to communicate to intended services. Also consider the impact these services have on your developers. For example, non transparent proxies can hinder use of some technologies.  
+  In the event that developer devices are compromised, constrain their onward access with wider network architecture controls that supports defence in depth. Examples may include firewall rule sets only permitting developer devices to communicate to intended services. Also consider the impact these services have on your developers. For example, non transparent proxies can hinder use of some technologies.
 
 * **Carry out protective monitoring of your development environment**  
   You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentally, a compromise. For example, are strange websites being accessed and are priviledged actions being carried out during unusual hours of the day?

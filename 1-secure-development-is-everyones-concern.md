@@ -36,7 +36,7 @@ Software development is a community activity. A healthy community should include
 ## Actions
 
 * **Define and articulate the requirements for security at the start and during product delivery**  
-  Without this, security practices are unlikely to take hold and be given the priority they need. 'Top-down' support should be provided.  
+  Without this, security practices are unlikely to take hold and be given the priority they need. 'Top-down' support should be provided.
 
 * **Security is an essential skill for every member of the delivery team**  
   Security needs to be considered throughout the development process, but it also has to be embedded into the culture and behaviours of all members of the delivery team. Embedding security is about more than writing it into a process - it needs to be a day-to-day practice if teams are to achieve faster delivery and deployment.
@@ -45,21 +45,21 @@ Software development is a community activity. A healthy community should include
   People should be rewarded for caring about the security of their products.
 
 * **Spending time on security should not be pushed aside for features, or delivery deadlines**  
-  Doing security retrospectively incurs a 'technical debt'. In other words, it's inefficient and expensive to fix security problems 'later' and your systems will be at greater risk in the meantime. Grow security with your product.  
+  Doing security retrospectively incurs a 'technical debt'. In other words, it's inefficient and expensive to fix security problems 'later' and your systems will be at greater risk in the meantime. Grow security with your product.
 
-* **There should always be some security expertise involved in the design and development of a project**
+* **There should always be some security expertise involved in the design and development of a project** 
   Although security specialists are desirable, even a little knowledge and appreciation of cyber security in a delivery team can go a long way.
 
-* **Ask for help**
+* **Ask for help** 
   The technology landscape is huge and ever expanding. Learn to recognise when your security knowledge is being stretched - and don't be afraid to ask for specialist support. This is particularly important for components that may be security critical.
 
-* **Facilitate security**  
+* **Facilitate security** 
   Provide training, tools and development environments that support secure development to [keep your security knowledge sharp](2-keep-your-security-knowledge-sharp.md).
 
-* **Promote a ‘no blame’ culture**  
+* **Promote a ‘no blame’ culture** 
   Even the best of us can make mistakes which result in security issues. If a negative culture surrounds the spotting and fixing of security issues, there's a risk that these problems will be ignored until it's too late.
 
-* **Security should support product delivery, not prevent it**
+* **Security should support product delivery, not prevent it** 
   It is possible for a security culture to become so extreme that it hampers delivery. People complain about security and bypass it when it's seen as getting in the way. Security experts should be approachable, reasonable and forthcoming with practical advice.
 
 

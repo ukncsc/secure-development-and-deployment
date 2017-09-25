@@ -26,7 +26,7 @@ Automated testing tools have a reputation for creating false positives. Where po
 
 ### Demonstrating absence
 
-Regardless of how you combine automated and manual testing, security tests can only reveal the presence of security vulnerabilities, they cannot demonstrate their absence. You still need to [make a plan for handling security flaws](https://github.com/ukncsc/secure-development-and-deployment/blob/master/8.%20Plan%20for%20security%20flaws.md).
+Regardless of how you combine automated and manual testing, security tests can only reveal the presence of security vulnerabilities, they cannot demonstrate their absence. You still need to [make a plan for handling security flaws](8-plan-for-security-flaws.md).
 
 There are additional ways to gain confidence in your code. Examples include protective monitoring, and formal verification. Formal verification can be used to specify up-front exactly how a system _should_ function. For example, how memory will be used. This can then be checked against the performance of the running code. It is often used in safety critical systems, but much less so for other kinds of development.
 
@@ -44,7 +44,7 @@ There are several different approaches to carrying out automated security testin
 
 * **In series**
 
-  Security tests act as a 'gate' during continuous integration and block deployment until they have succeeded.  
+  Security tests act as a 'gate' during continuous integration and block deployment until they have succeeded.
 
 * **In parallel**
 

@@ -13,25 +13,25 @@ Teams armed with up to date information are much more likely to implement approp
 
 ## Actions
 
-* **Developers should be aware of common security threats to their code**
+* **Developers should be aware of common security threats to their code** 
   If they do not already have this knowledge, resources should be provided so that it can be gained. Examples may include standard injection techniques and handling [untrusted input](https://www.owasp.org/index.php/Injection_Theory).
 
-* **Use your developer recruitment process to screen for basic security awareness**
+* **Use your developer recruitment process to screen for basic security awareness** 
   Qualifications aren't the only way to establish this. Real world practical application is more important. If this isn't possible, allocate extra resources for security learning and development.
 
-* **Make time and resources available for ongoing learning**
+* **Make time and resources available for ongoing learning** 
   Invest in training to develop security knowledge and skills.
 
-* **Teach developers about the types of threat their code will face**  
+* **Teach developers about the types of threat their code will face** 
   This goal may be achieved through group workshops that assess attacks and threats to your systems.
 
-* **Make developers accountable for the security of their code**  
-  Most developers already take pride in their work - [security is everyone's concern](./1. Secure development is everyone's concern.md).
+* **Make developers accountable for the security of their code** 
+  Most developers already take pride in their work - [security is everyone's concern](2-keep-your-security-knowledge-sharp.md).
 
-* **Be aware and consider when there is a particular need to write code defensively**  
+* **Be aware and consider when there is a particular need to write code defensively** 
   Take extra time and care when implementing security critical components, writing your code defensively. For example, when validating input which may be attacker-controlled.
 
-* **Get your security specialists to outline **for developers** which **components are** security-critical (this should not be 'everything')**  
+* **Get your security specialists to outline **for developers** which **components are** security-critical (this should not be 'everything')** 
   Developers should know when to seek extra support. Security efforts can then be prioritised.
 
 * **Use established and well-tested security components instead of creating your own**  
