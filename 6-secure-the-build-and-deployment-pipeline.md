@@ -35,17 +35,14 @@ However, providing this kind of flexibility can entail a bigger impact if malwar
 The following measures can help you to understand and reduce these risks:
 
 * **Separate business and development functions**  
-
-  Core business services such as email and document management often contain sensitive and highly prized information about your organisation and customers. If an attacker is able to compromise your development environment, they may try to pivot from this position to obtain additional benefit from their attack. Logically separating your development environment from other functions makes pivoting more difficult.  
+  Core business services such as email and document management often contain sensitive and highly prized information about your organisation and customers. If an attacker is able to compromise your development environment, they may try to pivot from this position to obtain additional benefit from their attack. Logically separating your development environment from other functions makes pivoting more difficult.
 
   Separation can be achieved without resorting to physically different devices. For example, a user may 'browse down' from a protected environment that is more locked down, into a local virtual machine or a remote environment where they can carry out development functions in a more flexible environment.
 
 * **Consider your development environment compromised**  
+  If an attacker is able to compromise a developer's environment they will inherit the same level of permissions and access as that developer. Placing additional controls between your developer environments and critical systems will help to reduce this impact. For example, the use of multi-factor authentication will make it harder for an attacker to leverage stolen credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.
 
-  If an attacker is able to compromise a developer's environment they will inherit the same level of permissions and access as that developer. Placing additional controls between your developer environments and critical systems will help to reduce this impact. For example, the use of multi-factor authentication will make it harder for an attacker to leverage stolen credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.  
-
-* **Trust your developers, verify their actions**
-
+* **Trust your developers, verify their actions** 
   People are not the weakest link, they are the first line of defence. Security-savvy individuals can sometimes be better at detecting and preventing attacks than technical controls.   Trust can be placed in individuals who are security aware and strive to do the right thing. Investing in monitoring and auditing controls will help you to verify this is happening. Examples include network monitoring to detect suspicious activity, checking patch levels and verifying software that users are installing.
 
 

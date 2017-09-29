@@ -12,22 +12,22 @@ Version control, peer review and built-in auditing are some of the advantages wh
 ### Actions
 
 * **Choose a repository you trust**  
-    Consider how the repository itself is administered and managed, including the underlying infrastructure. If the security of these components is compromised, it is difficult to assert trust in the code you store on it. If the repository is managed by a service provider, consider it against the NCSC [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection). Layering a process of cryptographic signing and verifying code on top of the repository can help to increase confidence that the code has not been tampered with.  
+    Consider how the repository itself is administered and managed, including the underlying infrastructure. If the security of these components is compromised, it is difficult to assert trust in the code you store on it. If the repository is managed by a service provider, consider it against the NCSC [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection). Layering a process of cryptographic signing and verifying code on top of the repository can help to increase confidence that the code has not been tampered with.
 
 * **Limit exposure & access to your repository**  
-    Technically enforce a model of least privilege for who can read and make changes to your code repository. Only permitted individuals should be able to view and make changes, and all activity should be attributable. For some use cases, it may be appropriate to 'code in the open', but consider the impacts first.  
+    Technically enforce a model of least privilege for who can read and make changes to your code repository. Only permitted individuals should be able to view and make changes, and all activity should be attributable. For some use cases, it may be appropriate to 'code in the open', but consider the impacts first.
 
 * **Protect access credentials**  
-    User access to repositories is often authenticated using credentials, such as passwords or private keys. Loss of these credentials may allow an attacker to gain unauthorised access. Ensure that developers are encouraged to protect these credentials while they are used and managed within your development environment. Private keys should be password protected. Backing them onto a hardware token such as a [FIDO](https://fidoalliance.org/specifications/overview/) U2F Security Key makes them harder to abuse. Consider the option of rotating access keys.  
+    User access to repositories is often authenticated using credentials, such as passwords or private keys. Loss of these credentials may allow an attacker to gain unauthorised access. Ensure that developers are encouraged to protect these credentials while they are used and managed within your development environment. Private keys should be password protected. Backing them onto a hardware token such as a [FIDO](https://fidoalliance.org/specifications/overview/) U2F Security Key makes them harder to abuse. Consider the option of rotating access keys.
 
 * **Separate secret credentials from source code**  
-    Logically separating secret credentials from source code and having a carefully defined injection process will help prevent them from getting leaked. Consider additional proactive controls such as key rotation and automatic scanning of your code repositories for secret keys to provide additional confidence.  
+    Logically separating secret credentials from source code and having a carefully defined injection process will help prevent them from getting leaked. Consider additional proactive controls such as key rotation and automatic scanning of your code repositories for secret keys to provide additional confidence.
 
 * **Access to the repository should be revoked swiftly when no longer required, or in the event of compromise**  
-    As your team evolves over time it's crucial you stay on top of who should have access and who should not.  
+    As your team evolves over time it's crucial you stay on top of who should have access and who should not.
 
 * **When making code open, carefully consider whether any parts should remain confidential**  
-    Although open-sourcing of code provides many benefits, it may also have a security impact. For example, code used to detect attacks would be of particular benefit to an adversary wishing to evade such measures. Attackers may also be able to glean information useful in formulating a spear-phishing attack. Some of your code may be more appropriately stored in a private repository.  
+    Although open-sourcing of code provides many benefits, it may also have a security impact. For example, code used to detect attacks would be of particular benefit to an adversary wishing to evade such measures. Attackers may also be able to glean information useful in formulating a spear-phishing attack. Some of your code may be more appropriately stored in a private repository.
 
 * **Review all code changes**  
     Certain code repositories or branches will hold the source code from which production deployments are made. Ensure that all code merged into this master version has gone through a review process to help prevent unintended or malicious code being included.
@@ -36,7 +36,7 @@ Version control, peer review and built-in auditing are some of the advantages wh
     When coding in the open, an attacker may attempt to change or influence your code. Carefully review any change or pull requests to understand security implications, noting that attacks could be subtle or disguised. Take extra care if any of this code is automatically run in your build and test infrastructure, as it could be malicious.
 
 * **If using a publicly accessible repository, take care of your identity**  
-    The information stored in your online profile could be helpful in the formulation of spear-phishing, and other attacks.  
+    The information stored in your online profile could be helpful in the formulation of spear-phishing, and other attacks.
 
 * **Ensure your code is backed up**  
     Back up your code so it can be restored if anything bad happens to your repository.
