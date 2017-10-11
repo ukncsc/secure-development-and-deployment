@@ -60,8 +60,8 @@ These examples are intended to help you assess your own practices, and those of 
 | Developers do not think that security is their responsibility, relying on the security team to worry about it. | Developers with less experience in defensive coding carry out pair programming with more experienced partners. |
 | Developers do not understand the basics of how coding flaws can be exploited, nor how to write defensively against such exploits. | Code is critiqued during review and shared with the wider team. |
 | Time and resources to invest in security training are not available to developers. | When a security incident occurs, retrospective workshops are held where lessons are learned in a 'no blame' atmosphere. |
-| Developers are too focused on delivery to invest in their security training. | Individuals with security expertise are available and clearly visible to staff. |
-| There is no expertise available to answer security questions. | Developers spend time keeping their security knowledge up to date. |
+| Developers are too focused on delivery to invest in their security training. | Developers spend time keeping their security knowledge up to date. |
+| There is no expertise available to answer security questions. | Individuals with security expertise are available and clearly visible to staff. |
 
 
 ## Related advice
