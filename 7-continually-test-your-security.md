@@ -104,7 +104,7 @@ These examples are intended to help you assess your own practices, and those of 
 | Automated security testing is not part of the deployment pipeline. | Static analysis tools are used to look for known issues in source code before deployment. |
 | Traditional security policies and audits prevent the business from achieving continuous integration. | Dynamic analysis security tools are run in parallel to the deployment pipeline, with automated results delivered to the team's communication channels. |
 | Specialist security testing is not scoped to reflect the main risks and concerns of the system. | Tests are created to check for known security issues, which are then continuously run by the deployment pipeline. |
-| Security tests are badly written. They don't always work or they produce too many false positives. Developers ignore the test warnings and the wider security testing stratagy is undermined. | Specialist penetration & vulnerability testing has been scoped to cover key components of specific concern to the business. |
+| Security tests are badly written. They don't always work or they produce too many false positives. Developers ignore the test warnings and the wider security testing strategy is undermined. | Specialist penetration & vulnerability testing has been scoped to cover key components of specific concern to the business. |
 | The results of security testing are hidden from developers so mistakes cannot be learned from. | --- |
 
 
