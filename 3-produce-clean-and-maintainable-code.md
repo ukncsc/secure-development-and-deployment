@@ -31,7 +31,7 @@ Writing defensive code will be easier to achieve, security mistakes easier to sp
 
 Having two or more people review code will increase your confidence in the quality and security of your product before release. This process should be enforced within your deployment pipeline to help reduce the likelihood of damaging code changes being pushed to your production environment.
 
-Any issues identified should be followed through with a fix. Remember, individuals can also peer review their own code, which can often save time before another person looks over it.
+Any issues identified should be followed through with a fix. Remember, individuals can also review their own code, which can often save time before another person looks over it.
 
 When reviewing code, you should consider:
 
