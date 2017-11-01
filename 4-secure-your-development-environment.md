@@ -44,7 +44,7 @@ The following measures can help you to understand and reduce these risks:
 
   If an attacker is able to compromise a developer's environment they will inherit the same level of permissions and access as that developer. Placing additional controls between your developer environments and critical systems will help to reduce this impact.
 
-  For example, the use of multi-factor authentication will make it harder for an attacker to leverage stolen credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.
+  For example, the use of multi-factor authentication will make it harder for an attacker who has compromised a device to leverage stolen keys, credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.
 
 * **Trust your developers, verify their actions**
 
