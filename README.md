@@ -27,9 +27,9 @@ IT systems rarely stand still, they change over time. With that in mind, these p
 
 ### Who is this guidance for?
 
-The simple answer is everyone involved in software development and procurement. These principles are intended to help secure the entire process of software development, from establishing a security-friendly culture in your organisation, through to implementation and ongoing management.  Whether you're securing a digital service or a traditional application, these criteria will help you gauge the security maturity of your own, or a supplier's development team, and the products and services you are producing or procuring.
+The simple answer is everyone involved in software development and procurement. These principles are intended to help secure the entire process of software development, from establishing a security-friendly culture in your organisation, through to implementation and ongoing management. Whether you're securing a digital service or a traditional application, these criteria will help you gauge the security maturity of your own, or a supplier's development team, and the products and services you are producing or procuring.
 
-Using these principles does not guarantee a secure product, but should help you gain confidence that the code you deploy is free from malicious interference. It is also not intended as a list of compliance standards - relevant parts may be pragmatically selected and used at your discretion.
+Using these principles does not guarantee a secure product, but should help you gain confidence that the code you deploy is free from malicious interference and fits with your [buisness risk managment stratagy](https://www.ncsc.gov.uk/blog-post/coming-soon-new-guidance-risk-management-cyber-security). It is also not intended as a list of compliance standards - relevant parts may be pragmatically selected and used at your discretion.
 
 > If you're developing a product that handles particularly sensitive information (eg information classified at SECRET or TOP SECRET), you should seek additional specialist advice about the specific threats you need to consider.
 
