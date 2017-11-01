@@ -68,3 +68,4 @@ These examples are intended to help you assess your own practices, and those of 
 
 * [Secure design principles](https://www.ncsc.gov.uk/guidance/security-design-principles-digital-services-main)
 * [http://www.riscs.org.uk/wp-content/uploads/2015/12/Awareness-is-Only-the-First-Step.pdf](http://www.riscs.org.uk/wp-content/uploads/2015/12/Awareness-is-Only-the-First-Step.pdf)
+* [https://www.ncsc.gov.uk/cisp](https://www.ncsc.gov.uk/cisp)
