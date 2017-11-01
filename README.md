@@ -15,7 +15,7 @@ The way we build software and systems is rapidly evolving, becoming more and mor
 
 Thanks in large part to the arrival of cloud computing and 'infrastructure as code', systems of almost any size and complexity can be called into life, changed or terminated without leaving the desktop. On top of these new capabilities a process of quick and regular deployments has evolved. Often referred to as Continuous Delivery, this iterative approach is powerful, flexible and efficient.
 
-But, these strengths bring with them a new set of risks which your security practices must address. To do so, you will need to consider security as a primary concern throughout the development and deployment process. In fact, development & deployment should be a cornerstone of your risk management and threat modelling aproach. If you do, the systems, features and fixes you build are less likely to be undermined by security compromise.
+But, these strengths bring with them a new set of risks which your security practices must address. To do so, you will need to consider security as a primary concern throughout the development and deployment process. In fact, development & deployment should be a cornerstone of your risk management and threat modelling approach. If you do, the systems, features and fixes you build are less likely to be undermined by security compromise.
 
 ### What does this guidance do?
 
