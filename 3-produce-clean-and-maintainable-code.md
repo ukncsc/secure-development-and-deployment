@@ -51,7 +51,8 @@ The code that you write often only makes up a small fraction of the total code b
 There is no easy way to mitigate the risks of third party code, but asking these questions may help:
 
 *   If there is a security vulnerability in the third party components of your code, what security impact may this have on your system?
-*   Is the dependency actively developed and maintained? If a vulnerability is found, who will fix it?
+*   Is the dependency actively developed and maintained? 
+*   If a vulnerability is found in one of your dependancies, would you know? Who would fix it?
 *   Are you using any old versions of third party code known to contain security vulnerabilities?
 *   Do you know anything about the author and maintainer of the dependency? How do they view and approach security?
 *   Does the dependency have any history of security vulnerabilities? What's important here is not necessarily that issues are discovered, but how they are handled.
