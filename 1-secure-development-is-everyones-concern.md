@@ -14,6 +14,8 @@ Every team needs security expertise, but not everyone on the team needs to be a 
 
 During design and delivery, continuously ask questions, discuss and identify potential security issues and work together to deliver solutions. Embed this process within your 'normal' approach to product delivery.
 
+Security should support business requirements by identifying security risks through testing and assessment, and providing controls to mitigate those risks to a level acceptable to the business.
+
 Security mistakes, and the associated security 'debt' which these entail, can be avoided if security is made part of everyday practice by your whole team. If this doesn't happen and security is considered as a 'bolt-on' once development is complete, then vulnerabilities may be missed and customer expectations may not be met. Both of these can lead to time-consuming and expensive re-working of code.
 
 Unfortunately, the security process is too often about achieving standards compliance and ticking boxes rather than delivering practical and pragmatic security outcomes. Developing a culture of encouraging people to ask questions and discuss potential security issues can help to overcome this.
