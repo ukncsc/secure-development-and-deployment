@@ -4,7 +4,7 @@
 
 All but the very simplest software is likely to contain bugs, some of which may have a security impact. This is true of code written in-house as well as any [third-party resources on which your product relies](3-produce-clean-and-maintainable-code.md). Flaws are not limited to coding errors and implementation mistakes, they can include architectural and design issues too.
 
-Having accepted the inevitability of such problems, make a plan to find and fix them.
+Having accepted the inevitability of such problems, [make a plan to find and fix them.] (https://www.ncsc.gov.uk/guidance/vulnerability-management).
 
 ### Security debt
 
