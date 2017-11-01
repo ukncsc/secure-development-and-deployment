@@ -29,7 +29,7 @@ Keeping a register of these items as you go along is important. It will allow yo
   After any event, carry out a [post-mortem](https://landing.google.com/sre/book/chapters/postmortem-culture.html) to help iterate your procedures and adapt your code. Sometimes it's possible to mitigate a whole class of vulnerabilities rather than having to do 'whack-a-mole' for each one. When possible, address the root cause. Seek out the point where the issue was introduced so you can learn from it.
 
 * **Provide a way for others to disclose security flaws to you**  
-  It should be possible for users and researchers to responsibly disclose security issues to you. This should be seen as a positive action - an attacker could have used the issue to do harm.
+  It should be possible for users and researchers to [responsibly disclose](https://www.ncsc.gov.uk/blog-post/vulnerability-co-ordination-pilot) security issues to you. This should be seen as a positive action - an attacker could have used the issue to do harm.
 
 * **Feed findings back into the [testing process](7-continually-test-your-security.md)**  
   Creating security tests for issues identified helps to gain confidence they will not occur again.
