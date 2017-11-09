@@ -2,75 +2,55 @@
 
 ## Introduction
 
-There is sometimes a perceived conflict between security and usability. This situation is highlighted in the case of end user devices and the environments used to support software development.
+Continuous integration, delivery and deployment are modern approaches to the building, testing and deployment of IT systems.
 
-Traditional enterprise IT is often configured to prevent users from running arbitrary code (and for good reason). However, some developers will require a less constrained environment, one which allows them to install relevant tooling and test their software effectively. Such flexibility can expose a broad attack surface to would-be attackers. This can make security professionals uncomfortable.
+Small, regular code commits can automatically trigger builds and run comprehensive testing. Whole system deployments can be made to development and reference environments, prior to deploying an identical production environment. The holy grail is a deployment pipeline that minimises the need for manual processes, allowing fully-tested regular production deployments in a matter of minutes.
 
-Developers tend to be technically smart. They will find 'clever' ways to work around hindrances, if that's what it takes to get their job done. We need a situation which is both flexible and secure. This guidance outlines how you can achieve this.
+The security of this process is critical if you need to protect the integrity of your code and the systems it builds. Security should, however, work with this process, not hinder it. Embrace '[DevSecOps](https://www.devsecops.org/)' approaches to gain confidence in your services.
 
-### Flexible and secure
+_Although this principle is primarily aimed at digital services using continuous delivery practices, you may still find some of this content helpful if you're using a different delivery approach. Development of most products and services will have some version of a 'deployment pipeline'._
 
-Securing your development environment is not about preventing your developers from working. It's about understanding the risks to your environments, applying technical controls _where appropriate_ and being in a position to trust and verify legitimate usage.
 
-The logical line between development and operations is becoming blurry. In environments where products and services are deployed through code, maintenance or operational activities can be carried out via configuration and software changes. The same individuals may often both develop _and_ operate a service.
+## Preliminary question: Do you trust the devices on which code is being written?
 
-Where this is the case, it's important to recognise the onward impact that a compromised device may have on your services, and apply controls to help limit this exposure.
+When considering build and deployment security there is an initial question you need to ask yourself before making any decisions: do you trust the devices on which the code is being written?
 
-### Security gained
+* **If you do:** the build and deployment pipeline needs to maintain the integrity of your code while it's being deployed. It can also be used to gain additional confidence in the security of your code.
 
-By performing the functions outlined in subsequent sections, you can help reduce the risk of an attacker:
-
-* stealing sensitive information (such as encryption and access keys, passwords or knowledge of security controls)
-* embedding malicious code in your project without your knowledge
-* using a compromised development device as a proxy to further attack your build and deployment pipeline, through to production
-* stealing code for the intellectual property it contains, or to release it publicly, causing embarrassment or degrading your security
-* understanding how your sensitive applications work - a first step in the planning of an attack
-
-### Securing a flexible system
-
-To do their job effectively, developers often need administration or root level permissions on their working environment.
-
-However, providing this kind of flexibility can entail a bigger impact if malware compromises their device. There are numerous ways this can happen, including spear-phishing, drive-by downloads, or accidental malware installation.
-
-The following measures can help you to understand and reduce these risks:
-
-* **Separate business and development functions**  
-  Core business services such as email and document management often contain sensitive and highly prized information about your organisation and customers. If an attacker is able to compromise your development environment, they may try to pivot from this position to obtain additional benefit from their attack. Logically separating your development environment from other functions makes pivoting more difficult.
-
-  Separation can be achieved without resorting to physically different devices. For example, a user may 'browse down' from a protected environment that is more locked down, into a local virtual machine or a remote environment where they can carry out development functions in a more flexible environment.
-
-* **Consider your development environment compromised**  
-  If an attacker is able to compromise a developer's environment they will inherit the same level of permissions and access as that developer. Placing additional controls between your developer environments and critical systems will help to reduce this impact. For example, the use of multi-factor authentication will make it harder for an attacker to leverage stolen credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.
-
-* **Trust your developers, verify their actions** 
-  People are not the weakest link, they are the first line of defence. Security-savvy individuals can sometimes be better at detecting and preventing attacks than technical controls.   Trust can be placed in individuals who are security aware and strive to do the right thing. Investing in monitoring and auditing controls will help you to verify this is happening. Examples include network monitoring to detect suspicious activity, checking patch levels and verifying software that users are installing.
+* **If you do not:** the build and deployment pipeline becomes the point at which you need to gain confidence in the code you are deploying. This is critical. Your onward pipeline is the gateway to production.
 
 
 ## Actions
 
-* **Provide developers with the tools and environment they need**  
-  Practical tooling is essential if you want to avoid technically savvy developers finding insecure workarounds. This may sometimes mean being a bit more tolerant to the risks of a developer device being compromised and putting wider protections in place to account for this. If an IT department can respond effectively to software requests, it may be possible to avoid giving out local administrative permissions.
+* **Use a pipeline you trust**
+  Consider how the pipeline itself is administered and managed, including the underlying infrastructure. If the security of these components is compromised, it is difficult to assert trust in code you build and deploy through it. If the pipeline is managed by a service provider, use the NCSC [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection) to understand the security properties of their service. Layering a process of cryptographic signing and code verification on top of your repository can help to increase confidence that the code has not been tampered with.
 
-* **Trust your developers, verify their actions**  
-  Educate users and trust them to do the right thing. Implement functions to verify their activity, and to detect suspicious activity or potential compromise.
+* **Peer review code before deployment**
+  Accept or reject according to your development processes. This step is an important source of quality control, so you should implement technical controls to prevent it being bypassed.
 
-* **Reduce the attack surface of your developer environment**  
-  Apply the [NCSC end user device guidance](https://www.ncsc.gov.uk/guidance/end-user-device-security) to your development environment. Be pragmatic in the selection of your security controls so that you don't hinder development. Consider the security mitigation technology provided by devices and operating systems when selecting your devices and environments.
+* **Control how deployments are triggered**
+  Code that triggers automated deployment to production environments should be carefully managed. Production deployments shouldn't be made from untrusted code repositories, forks or branches.
 
-* **Protect access credentials and secret keys**  
-  Carefully consider how you store and handle credentials that grant access to critical services and systems. Using multi-factor authentication will mean that stolen passwords are not sufficient on their own to gain unauthorised access. Use a least privilege access model and revoke any credentials which may have been compromised, or are no longer needed.
+* **Run automatic testing as part of your deployments**
+  Well thought out tests can help you gain confidence in the security of your code. Bad tests can get in the way. Where possible, automate testing so that it supports the deployment pipeline. 'Cheap' tests can be run on every code change, resource-intensive tests can be saved for notable releases. Don't ignore tests that fail. Re-evaluate and refactor testing that does not work for you.
 
-* **Assess the impact of a compromise and apply onward controls**  
-  In the event a development environment is compromised, consider the onward technical controls that will protect the products and services you produce and publish.
+* **Carefully manage secrets and credentials**
+  Your deployment pipeline tooling may require secret tokens or credentials to launch and run code. Inadvertently exposing secrets may allow unauthorised access to your systems. Take care in how you store, manage and inject these into your environment. Consider rotating keys and how this process can be automated to make it practical in your workflow.
 
-* **Don't operate your production systems from a development environment**  
-  Managing production ('live') services from development environments can be high risk. In situations where this is required, try to limit the exposure of your production services. Consider models for [least privileged](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material) access management and temporary access credentials through a request process. System [management interfaces](https://www.ncsc.gov.uk/blog-post/protect-your-management-interfaces) are important to secure, but out of scope for this guidance.
+* **Ensure deployment pipeline controls cannot be bypassed, or re-ordered**
+  All deployment processes should be followed from development through to deployment. This could be achieved architecturally, or by carrying out cryptographic signing and verification at each stage.
 
-* **Apply network architecture controls**  
-  In the event that developer devices are compromised, constrain their onward access with wider network architecture controls that supports defence in depth. Examples may include firewall rule sets only permitting developer devices to communicate to intended services. Also consider the impact these services have on your developers. For example, non transparent proxies can hinder use of some technologies.
+* **Avoid 'self policing'**
+  The pipeline should enforce rules that define whether code is accepted or rejected before deployment. It's possible that these controls are themselves implemented in source code, along with your product. It should not be possible for individuals to 'police themselves' by modifying these rules.
 
-* **Carry out protective monitoring of your development environment**  
-  You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentially, a compromise. For example, are strange websites being accessed and are privileged actions being carried out during unusual hours of the day?
+* **Be cautious of untrusted branches and pull requests**
+  Consider how your automated build and test tooling react to branches of your code or pull requests that may be malicious. For example, an attacker may be able to execute malicious code within your environment if your automated tooling runs over third party pull requests.
+
+* **Be cautious of importing third party libraries and their updates**
+  Ensure only intended dependencies are included and that they come from legitimate sources. Old versions of libraries may contain security vulnerabilities that will affect your own code. Keep in mind that if you import vulnerable code that it can make your system vulnerable too.
+
+* **Consider hard breaks and approval (optional)**
+  Fully automated deployment without adequate security controls in place is high risk. If you don't have confidence in the deployment pipeline processes, consider a hard break that requires approval before releases go live into a production environment.
 
 
 ## Self assessment
@@ -79,15 +59,13 @@ These examples are intended to help you assess your own practices, and those of 
 
 | BAD | GOOD |
 |-----|------|
-| Production systems have good security, but the environment where code is built and deployed is a 'free for all'. | Staff are issued with securely managed devices, configured to protect them from a number of cyber security risks. |
-| Any user or device with access to the development environment is able to make code and deployment changes and push these to production. There are no additional protections in place. | Developers are provided with the tools they need by connecting to a development environment, separated from the base device. _Alternatively, developers don't need local admin because the IT Department responds quickly to their requests for development tools._ |
-| No protective monitoring, logging or auditing is carried out on development environments to help identify if and when a compromise occurs. | Instead of locking down developer devices, a trust and verify approach is used to reduce the risk of them being compromised. Owners are educated about the risks and asked to carry out security functions such as disk encryption, keeping software up to date and running antivirus. Monitoring controls are used to verify these are in place. |
-| Developers are able to directly access production infrastructure from developer machines. There are no additional protections in place, such as a change authorisation process, or controls that only allow 'secure' device access. | The risk of secret credentials being lost or stolen is reduced by pairing their use with two factor authentication. |
-| --- | The development environment has protective monitoring controls in place to help detect compromise and facilitate quick and effective remediation. |
+| The underlying platform that your continuous integration tooling runs on is insecurely designed or configured. | A cloud service-provided, continuous integration platform is used after being assessed against the [cloud security principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection). |
+| Everyone in the development team can make changes to both the code base itself, and the deployment pipeline checks, without peer review. | When changes are made to critical deployment steps, the important nature of the change is recognised and carefully reviewed before being accepted. |
+| A peer review process is followed between team members before code changes are made to the master branch. However, there are no technical controls in place preventing direct changes to the master branch. | Code is digitally signed and this signature is later used by the deployment pipeline to help ensure unauthorised changes have not been introduced. |
+| External pull requests on the code repository are automatically run by integration tooling, allowing third parties to execute untrusted code in the test and development environment. | During the build process, only a whitelist of trusted third party repositories are permitted to be pulled from, and they are accessed in secure ways (e.g. using TLS). |
+| During the build process, third party libraries are dynamically pulled in using insecure protocols such as HTTP. No technical controls are in place to help prevent malicious libraries being included. | The security controls in the deployment pipeline are assessed and implemented in such a way that they cannot be bypassed. |
 
 
 ## Related advice
 
-* [End User Device Guidance](https://www.ncsc.gov.uk/guidance/end-user-device-security)
-* [https://www.ncsc.gov.uk/blog-post/protect-your-management-interfaces](https://www.ncsc.gov.uk/blog-post/protect-your-management-interfaces)
-* [https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
+* [https://www.devsecops.org/](https://www.devsecops.org/)
