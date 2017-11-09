@@ -62,7 +62,7 @@ The following measures can help you to understand and reduce these risks:
   Educate users and trust them to do the right thing. Implement functions to verify their activity, and to detect suspicious activity or potential compromise.
 
 * **Reduce the attack surface of your developer environment**  
-  Apply the [NCSC end user device guidance](https://www.ncsc.gov.uk/guidance/end-user-device-security) to your development environment. Be pragmatic in the selection of your security controls so that you don't hinder development. Consider the security mitigation technology provided by devices and operaring systems when selecting your devices and environments.
+  Apply the [NCSC end user device guidance](https://www.ncsc.gov.uk/guidance/end-user-device-security) to your development environment. Be pragmatic in the selection of your security controls so that you don't hinder development. Consider the security mitigation technology provided by devices and operating systems when selecting your devices and environments.
 
 * **Protect access credentials and secret keys**  
   Carefully consider how you store and handle credentials that grant access to critical services and systems. Using multi-factor authentication will mean that stolen passwords are not sufficient on their own to gain unauthorised access. Use a least privilege access model and revoke any credentials which may have been compromised, or are no longer needed.
@@ -77,7 +77,7 @@ The following measures can help you to understand and reduce these risks:
   In the event that developer devices are compromised, constrain their onward access with wider network architecture controls that supports defence in depth. Examples may include firewall rule sets only permitting developer devices to communicate to intended services. Also consider the impact these services have on your developers. For example, non transparent proxies can hinder use of some technologies.
 
 * **Carry out protective monitoring of your development environment**  
-  You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentally, a compromise. For example, are strange websites being accessed and are priviledged actions being carried out during unusual hours of the day?
+  You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentially, a compromise. For example, are strange websites being accessed and are priviledged actions being carried out during unusual hours of the day?
 
 
 ## Self assessment
