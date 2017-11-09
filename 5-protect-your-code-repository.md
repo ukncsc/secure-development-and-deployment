@@ -44,7 +44,7 @@ Version control, peer review and built-in auditing are some of the advantages wh
 
 * **Ensure your code is backed up**  
     Back up your code so it can be restored if anything bad happens to your repository.
-
+    
 
 ## Self assessment
 

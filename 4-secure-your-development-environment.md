@@ -18,12 +18,11 @@ Where this is the case, it's important to recognise the onward impact that a com
 
 ### Security gained
 
-By performing the functions outlined in subsequent sections, you can help reduce the risk of an attacker:
+You can take actions to secure your development environment and reduce the risk of an attacker:
 
-*   stealing sensitive information (such as encryption and access keys, passwords or knowledge of security controls)
+*   stealing sensitive information (such as encryption and access keys, passwords, knowledge of security controls or intellectual property)
 *   embedding malicious code in your project without your knowledge
-*   using a compromised development device as a proxy to further attack your build and deployment pipeline, through to production
-*   stealing code for the intellectual property it contains, or to release it publicly, causing embarrassment or degrading your security
+*   using a compromised development device as a proxy to further attack your build and deployment pipeline, through to production 
 *   understanding how your sensitive applications work - a first step in the planning of an attack
 
 ### Securing a flexible system
