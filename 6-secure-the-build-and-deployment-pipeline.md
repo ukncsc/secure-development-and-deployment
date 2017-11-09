@@ -66,6 +66,6 @@ These examples are intended to help you assess your own practices, and those of 
 | During the build process, third party libraries are dynamically pulled in using insecure protocols such as HTTP. No technical controls are in place to help prevent malicious libraries being included. | The security controls in the deployment pipeline are assessed and implemented in such a way that they cannot be bypassed. |
 
 
-## Resuources
+## Related advice
 
 * [https://www.devsecops.org/](https://www.devsecops.org/)
