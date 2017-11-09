@@ -30,6 +30,9 @@ Version control, peer review and built-in auditing are some of the advantages wh
 * **When making code open, carefully consider whether any parts should remain confidential**  
     Although open-sourcing of code provides many benefits, it may also have a security impact. For example, code used to detect attacks would be of particular benefit to an adversary wishing to evade such measures. Attackers may also be able to glean information useful in formulating a spear-phishing attack. Some of your code may be more appropriately stored in a private repository.
 
+* **Include open code in your risk model**
+    Some of your code may be more appropriatly stored in a private repository. For example, code used to detect fraud attacks would be of particular benefit to an adversary wishing to avaid such measures. When coding in the open, there a number of security best practices you can adopt, like automated testing and peer reveiws.
+
 * **Review all code changes**  
     Certain code repositories or branches will hold the source code from which production deployments are made. Ensure that all code merged into this master version has gone through a review process to help prevent unintended or malicious code being included.
 
