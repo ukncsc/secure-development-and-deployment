@@ -14,8 +14,9 @@ Version control, peer review and built-in auditing are some of the advantages wh
 * **Choose a repository you trust**  
     Consider how the repository itself is administered and managed, including the underlying infrastructure. If the security of these components is compromised, it is difficult to assert trust in the code you store on it. If the repository is managed by a service provider, consider it against the NCSC [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection). Layering a process of cryptographic signing and verifying code on top of the repository can help to increase confidence that the code has not been tampered with.
 
-* **Limit exposure & access to your repository**  
-    Technically enforce a model of least privilege for who can read and make changes to your code repository. Only permitted individuals should be able to view and make changes, and all activity should be attributable. For some use cases, it may be appropriate to 'code in the open', but consider the impacts first.
+* **Consider the exposure of your repository**  
+
+    Technically enforce a model of least privilege for who can make changes to your code repository.  Make sure all activity is attributable.
 
 * **Protect access credentials**  
     User access to repositories is often authenticated using credentials, such as passwords or private keys. Loss of these credentials may allow an attacker to gain unauthorised access. Ensure that developers are encouraged to protect these credentials while they are used and managed within your development environment. Private keys should be password protected. Backing them onto a hardware token such as a [FIDO](https://fidoalliance.org/specifications/overview/) U2F Security Key makes them harder to abuse. Consider the option of rotating access keys.
