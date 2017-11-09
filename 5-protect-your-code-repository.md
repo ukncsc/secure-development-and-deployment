@@ -15,7 +15,6 @@ Version control, peer review and built-in auditing are some of the advantages wh
     Consider how the repository itself is administered and managed, including the underlying infrastructure. If the security of these components is compromised, it is difficult to assert trust in the code you store on it. If the repository is managed by a service provider, consider it against the NCSC [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection). Layering a process of cryptographic signing and verifying code on top of the repository can help to increase confidence that the code has not been tampered with.
 
 * **Consider the exposure of your repository**  
-
     Technically enforce a model of least privilege for who can make changes to your code repository.  Make sure all activity is attributable.
 
 * **Protect access credentials**  
