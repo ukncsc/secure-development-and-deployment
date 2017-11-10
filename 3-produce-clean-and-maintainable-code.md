@@ -128,3 +128,4 @@ These examples are intended to help you assess your own practices, and those of 
 *   [OWASP Secure Coding Practices - Quick Reference Guide](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)
 *   [The Apple goto fail vulnerability: lessons learned](https://www.dwheeler.com/essays/apple-goto-fail.html)
 *   [What does KISS stand for?](https://people.apache.org/~fhanik/kiss.html)
+*   [CIS Security Controls (formerly SANS Top 20)](https://www.cisecurity.org/controls/)
