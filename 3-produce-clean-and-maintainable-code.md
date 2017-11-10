@@ -62,6 +62,9 @@ There is no easy way to mitigate the risks of third party code, but asking these
 
 * **Logically architect the layout of the code**  
   Writing clean and maintainable code is much easier when it's clear which components belong where. The architecture should take into account potential expansion. The [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles provide an example of this approach.
+  
+* **Validate architecture against security principles**
+  Especially when continuously developing code, using structurally sound secure architecture provides a baseline level of protection against flaws and vulnerabilities. Validation of architecture and code blocks is recommended throughout development.
 
 * **Coding standards** 
   Follow secure coding standards where available. For example, the [CERT Secure Coding project](https://www.securecoding.cert.org/) includes numerous rules for different languages to avoid potential security vulnerabilities.
