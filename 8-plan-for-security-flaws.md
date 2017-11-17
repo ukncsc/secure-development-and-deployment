@@ -14,7 +14,7 @@ Some of this technical debt may have a security impact (for example, granting fu
 
 Keeping a register of these items as you go along is important. It will allow you to return and address them later. Consider how 'expensive' the [design decisions](https://www.ncsc.gov.uk/guidance/security-design-principles-digital-services-main) you make today will be later down the line.
 
-## Guidance
+## Actions
 
 * **Put [vulnerability management](https://www.ncsc.gov.uk/guidance/vulnerability-management) processes in place**  
   Where you use widely available software and hardware, you should be deploying patches and looking for known weak configurations.

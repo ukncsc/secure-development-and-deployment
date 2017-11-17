@@ -74,7 +74,7 @@ We have [guidance specifically dedicated to penetration testing](https://www.ncs
   Automated tests help prevent an issue being re-introduced.
 
 * **Expose results of testing to your developers**  
-  Being able to easily view, understand and discuss the outputs of security testing helps you respond to issues, shares knowledge through the team, and reinforces the importance of the test themselves. Examples may include visual displays or interactions with communication channels, such as 'chat-ops'. When tests are not working to support the development process, iterate them.
+  Being able to easily view, understand and discuss the outputs of security testing helps you respond to issues, shares knowledge through the team, and reinforces the importance of the tests themselves. Examples may include visual displays or interactions with communication channels, such as 'chat-ops'. When tests are not working to support the development process, iterate them.
 
 * **Focus security specialists on testing that cannot be easily automated**  
   Automated security testing reduces the burden of repetitive tasks but it doesn't replace manual security audits by skilled professionals.

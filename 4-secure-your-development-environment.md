@@ -55,7 +55,7 @@ The following measures can help you to understand and reduce these risks:
 ## Actions
 
 * **Provide developers with the tools and environment they need**  
-  Practical tooling is essential if you want to avoid technically savvy developers finding insecure workarounds. This may sometimes mean being a bit more tolerant to the risks of a developer device being compromised and putting wider protections in place to account for this. If an IT department can respond effectivley to software requests, it may be possible to avoid giving out local administrative permissions.
+  Practical tooling is essential if you want to avoid technically savvy developers finding insecure workarounds. This may sometimes mean being a bit more tolerant to the risks of a developer device being compromised and putting wider protections in place to account for this. If an IT department can respond effectively to software requests, it may be possible to avoid giving out local administrative permissions.
 
 * **Trust your developers, verify their actions**  
   Educate users and trust them to do the right thing. Implement functions to verify their activity, and to detect suspicious activity or potential compromise.
@@ -76,7 +76,7 @@ The following measures can help you to understand and reduce these risks:
   In the event that developer devices are compromised, constrain their onward access with wider network architecture controls that supports defence in depth. Examples may include firewall rule sets only permitting developer devices to communicate to intended services. Also consider the impact these services have on your developers. For example, non transparent proxies can hinder use of some technologies.
 
 * **Carry out protective monitoring of your development environment**  
-  You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentially, a compromise. For example, are strange websites being accessed and are priviledged actions being carried out during unusual hours of the day?
+  You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentially, a compromise. For example, are strange websites being accessed and are privileged actions being carried out during unusual hours of the day?
 
 
 ## Self assessment

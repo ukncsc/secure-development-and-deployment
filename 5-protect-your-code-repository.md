@@ -27,7 +27,7 @@ Version control, peer review and built-in auditing are some of the advantages wh
     As your team evolves over time it's crucial you stay on top of who should have access and who should not.
 
 * **Include open code in your risk model**
-    Some of your code may be more appropriatly stored in a private repository. For example, code used to detect fraud attacks would be of particular benefit to an adversary wishing to avaid such measures. When coding in the open, there a number of security best practices you can adopt, like automated testing and peer reveiws.
+    Some of your code may be more appropriately stored in a private repository. For example, code used to detect fraud attacks would be of particular benefit to an adversary wishing to avoid such measures. When coding in the open, there are a number of security best practices you can adopt, like automated testing and peer reviews.
 
 * **Review all code changes**  
     Certain code repositories or branches will hold the source code from which production deployments are made. Ensure that all code merged into this master version has gone through a review process to help prevent unintended or malicious code being included.
@@ -53,7 +53,7 @@ These examples are intended to help you assess your own practices, and those of 
 | Code used to detect cyber compromise is published on a public code repository, giving attackers the ability to inspect how it works. |The code repository service chosen was given careful consideration (e.g. using the [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection) to understand the risks of different options). |
 | Your code repository, hosted as a cloud service, adheres to bad security practices. | All code is reviewed before it is merged into the master version of the code repository. Extra care is taken if these code changes were submitted by an individual outside the development team. |
 | Leavers' accounts and permissions are not deleted or revoked. | Access to source code repositories is joined up with the leavers and joiners process of your organisation. |
-| Public profiles of key developers contain a large amount of personal information which could be used by an attacker to mount a convincing spear-phishing attack. | The accounts that developers use to access and modify your organisation's source code are periodically reviewed to assess potential risk. For example, through the public information available to an attacker and the security settings that are used on the accounts. |
+| Public profiles of key developers contain a large amount of personal information which could be used to mount a convincing spear-phishing attack. | The accounts that developers use to access and modify your organisation's source code are periodically reviewed to assess potential risk. For example, through the public information available to an attacker and the security settings that are used on the accounts. |
 
 
 ## Related advice

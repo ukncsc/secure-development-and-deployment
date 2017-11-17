@@ -15,7 +15,7 @@ The way we build software and systems is rapidly evolving, becoming more and mor
 
 Thanks in large part to the arrival of cloud computing and 'infrastructure as code', systems of almost any size and complexity can be called into life, changed or terminated without leaving the desktop. On top of these new capabilities a process of quick and regular deployments has evolved. Often referred to as Continuous Delivery, this iterative approach is powerful, flexible and efficient.
 
-But, these strengths bring with them a new set of risks which your security practices must address. To do so, you will need to consider security as a primary concern throughout the development and deployment process. In fact, development & deployment should be a cornerstone of your risk management and threat modelling approach. If you do, the systems, features and fixes you build are less likely to be undermined by security compromise.
+But, these strengths bring with them a new set of risks which your security practices must address. To do so, you will need to consider security as a primary concern throughout the development and deployment process. In fact, development & deployment should be a cornerstone of your risk management and threat modelling approach. If you work in this way, the systems, features and fixes you build are less likely to be undermined by security compromise.
 
 ### What does this guidance do?
 
@@ -45,7 +45,7 @@ Development teams, technologies and good practices evolve over time, so you shou
 ## 8 Principles of Secure Development & Deployment
 
 ### 1. Secure development is everyone's concern
-Everyone should accept that the security of IT systems is important. Even the most amazing application, delivered on time and to budget, is likely to have security vulnerabilities. A culture which values and rewards the detection and mitigation of these vulnerabilities is the most efficient and effective way to manage this 'fact of life'. Everyone building and running a service has a responsibility for security.
+Everyone should accept that the security of IT systems is important. Even the most amazing application, delivered on time and to budget, is likely to have security vulnerabilities. Having a culture which values and rewards the detection and mitigation of these vulnerabilities is the most efficient and effective way to manage this 'fact of life'. Everyone building and running a service has a responsibility for security.
 
 [Read more](1-secure-development-is-everyones-concern.md)
 

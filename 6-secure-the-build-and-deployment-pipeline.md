@@ -47,10 +47,10 @@ When considering build and deployment security there is an initial question you 
   Consider how your automated build and test tooling react to branches of your code or pull requests that may be malicious. For example, an attacker may be able to execute malicious code within your environment if your automated tooling runs over third party pull requests.
 
 * **Be cautious of importing third party libraries and their updates**
-  Ensure only intended dependencies are included and that they come from legitimate sources. Old versions of libraries may contain security vulnerabilities that will affect your own code. Keep in mind that if you import vulnerable code that it can make your system vulnerable too.
+  Ensure only intended dependencies are included and that they come from legitimate sources. Old versions of libraries may contain security vulnerabilities that will affect your own code. Keep in mind that if you import vulnerable code, this can make your system vulnerable too.
 
 * **Consider hard breaks and approval (optional)**
-  Fully automated deployment without adequate security controls in place is high risk. If you don't have confidence in the deployment pipeline processes, consider a hard break that requires approval before releases go live into a production environment.
+  Fully automated deployment without adequate security controls in place is high risk. If you don't have confidence in the deployment pipeline processes, consider a hard break that requires approval before releases go live in a production environment.
 
 
 ## Self assessment
