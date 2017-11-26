@@ -31,7 +31,7 @@ Writing defensive code will be easier to achieve, security mistakes easier to sp
 
 Having two or more people review code will increase your confidence in the quality and security of your product before release. This process should be enforced within your deployment pipeline to help reduce the likelihood of damaging code changes being pushed to your production environment.
 
-Any issues identified should be followed through with a fix. Remember, individuals can also peer review their own code, which can often save time before another person looks over it.
+Any issues identified should be followed through with a fix. Remember, individuals can also review their own code, which can often save time before another person looks over it.
 
 When reviewing code, you should consider:
 
@@ -51,7 +51,8 @@ The code that you write often only makes up a small fraction of the total code b
 There is no easy way to mitigate the risks of third party code, but asking these questions may help:
 
 *   If there is a security vulnerability in the third party components of your code, what security impact may this have on your system?
-*   Is the dependency actively developed and maintained? If a vulnerability is found, who will fix it?
+*   Is the dependency actively developed and maintained? 
+*   If a vulnerability is found in one of your dependencies, would you know? Who would fix it?
 *   Are you using any old versions of third party code known to contain security vulnerabilities?
 *   Do you know anything about the author and maintainer of the dependency? How do they view and approach security?
 *   Does the dependency have any history of security vulnerabilities? What's important here is not necessarily that issues are discovered, but how they are handled.
@@ -76,7 +77,7 @@ There is no easy way to mitigate the risks of third party code, but asking these
   Understanding code becomes more difficult when different coding styles used by different developers mix and intertwine.
 
 * **Clearly outline code block responsibilities**  
-  Security issues can arise when one code component inaccurately assumes another has taken responsibility for an action. For example, when validating potentially malicious input at the border of your application. One way to achieve this is to have a comment block at the top of every method or function.
+  Security issues can arise when one code component incorrectly assumes another has taken responsibility for an action. For example, when validating potentially malicious input at the border of your application. One way to achieve this is to have a comment block at the top of every method or function.
 
 * **Separate secret credentials**  
   Keep secrets such as passwords and private keys logically isolated from the core code base. This will help prevent them being checked in to public code repositories. Hard coding credentials in source code is bad practice.
@@ -91,7 +92,7 @@ There is no easy way to mitigate the risks of third party code, but asking these
   Encourage a culture that does not accept complicated, confusing or insecure coding practices. Peer review helps prevent such issues being incorporated into your code base. Feedback helps support education within your team. Using pull requests and comments is one way to achieve this.
 
 * **Team communications**  
-  When multiple team members are working on the same code base, there should be strong and regular communication channels between them. The aim here is to avoid the following scenario: 'I thought you were securing that component!'. Keeping teams physical close to one-another, or providing real-time chat channels are two ways to achieve this.
+  When multiple team members are working on the same code base, there should be strong and regular communication channels between them. The aim here is to avoid the following scenario: 'I thought you were securing that component!'. Keeping teams physically close to one-another, or providing real-time chat channels are two ways to achieve this.
 
 * **Document and comment clearly and consistently**  
   Clear and concise documentation should support your product. This may be as a result of self-documenting code, code comments, or supportive material. Documentation should be kept up to date, as a system evolves. Old and out-of-date documentation is difficult to trust and could be damaging for security if it's interpreted incorrectly.
@@ -100,7 +101,7 @@ There is no easy way to mitigate the risks of third party code, but asking these
   Developers and other team members may come and go over the life span of a product. To ensure adequate knowledge of the product is maintained, provide good support and documentation to new team members. After all, who will fix security vulnerabilities left behind by previous developers?
 
 * **Check return values and handle errors appropriately** 
-  Checking for errors at the point of a call and handling them immedidately means that your code doesn't continue running in a potentially unstable state. This will make your code more robust and secure.
+  Checking for errors at the point of a call and handling them immediately means that your code doesn't continue running in a potentially unstable state. This will make your code more robust and secure.
 
 
 

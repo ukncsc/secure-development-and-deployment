@@ -1,6 +1,6 @@
 # Principles of secure development & deployment
 
-> 8 Principles to help you improve and evaluate your development practices, or those of your suppliers.
+> 8 Principles to help you improve and evaluate your development practices, and those of your suppliers.
 
 > ALPHA: This document is an initial draft. Due to the nature of the guidance, it seemed appropriate to share this on GitHub. We welcome your feedback through issues and pull requests. Please [read our blog](https://www.ncsc.gov.uk/blog-post/secure-development-and-deployment) that introduces this content.
 
@@ -9,13 +9,13 @@
 
 ## Introduction
 
-Having a secure approach to development has never been so important.
+Having a secure approach to development has never been so important. 
 
 The way we build software and systems is rapidly evolving, becoming more and more automated and integrated. Today, developers can define an entire system architecture in code and tie it to tooling which will automate both testing and deployment.
 
 Thanks in large part to the arrival of cloud computing and 'infrastructure as code', systems of almost any size and complexity can be called into life, changed or terminated without leaving the desktop. On top of these new capabilities a process of quick and regular deployments has evolved. Often referred to as Continuous Delivery, this iterative approach is powerful, flexible and efficient.
 
-But, these strengths bring with them a new set of risks which your security practices must address. To do so, you will need to consider security as a primary concern throughout the development and deployment process. If you do, the systems, features and fixes you build are less likely to be undermined by security compromise.
+But, these strengths bring with them a new set of risks which your security practices must address. To do so, you will need to consider security as a primary concern throughout the development and deployment process. In fact, development & deployment should be a cornerstone of your risk management and threat modelling approach. If you work in this way, the systems, features and fixes you build are less likely to be undermined by security compromise.
 
 ### What does this guidance do?
 
@@ -27,9 +27,9 @@ IT systems rarely stand still, they change over time. With that in mind, these p
 
 ### Who is this guidance for?
 
-The simple answer is everyone involved in software development and procurement. These principles are intended to help secure the entire process of software development, from establishing a security-friendly culture in your organisation, through to implementation and ongoing management.  Whether you're securing a digital service or a traditional application, these criteria will help you gauge the security maturity of your own, or a supplier's development team, and the products and services you are producing or procuring.
+The simple answer is everyone involved in software development and procurement. These principles are intended to help secure the entire process of software development, from establishing a security-friendly culture in your organisation, through to implementation and ongoing management. Whether you're securing a digital service or a traditional application, these criteria will help you gauge the security maturity of your own, or a supplier's development team, and the products and services you are producing or procuring.
 
-Using these principles does not guarantee a secure product, but should help you gain confidence that the code you deploy is free from malicious interference. It is also not intended as a list of compliance standards - relevant parts may be pragmatically selected and used at your discretion.
+Using these principles does not guarantee a secure product, but should help you gain confidence that the code you deploy is free from malicious interference and fits with your [buisness risk managment stratagy](https://www.ncsc.gov.uk/blog-post/coming-soon-new-guidance-risk-management-cyber-security). It is also not intended as a list of compliance standards - relevant parts may be pragmatically selected and used at your discretion.
 
 > If you're developing a product that handles particularly sensitive information (eg information classified at SECRET or TOP SECRET), you should seek additional specialist advice about the specific threats you need to consider.
 
@@ -45,7 +45,7 @@ Development teams, technologies and good practices evolve over time, so you shou
 ## 8 Principles of Secure Development & Deployment
 
 ### 1. Secure development is everyone's concern
-Everyone should accept that the security of IT systems is important. Even the most amazing application, delivered on time and to budget, is likely to have security vulnerabilities. A culture which values and rewards the detection and mitigation of these vulnerabilities is the most efficient and effective way to manage this 'fact of life'. Everyone building and running a service has a responsibility for security.
+Everyone should accept that the security of IT systems is important. Even the most amazing application, delivered on time and to budget, is likely to have security vulnerabilities. Having a culture which values and rewards the detection and mitigation of these vulnerabilities is the most efficient and effective way to manage this 'fact of life'. Everyone building and running a service has a responsibility for security.
 
 [Read more](1-secure-development-is-everyones-concern.md)
 

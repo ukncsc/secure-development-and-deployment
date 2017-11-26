@@ -4,7 +4,7 @@
 
 All but the very simplest software is likely to contain bugs, some of which may have a security impact. This is true of code written in-house as well as any [third-party resources on which your product relies](3-produce-clean-and-maintainable-code.md). Flaws are not limited to coding errors and implementation mistakes, they can include architectural and design issues too.
 
-Having accepted the inevitability of such problems, make a plan to find and fix them.
+Having accepted the inevitability of such problems, [make a plan to find and fix them.] (https://www.ncsc.gov.uk/guidance/vulnerability-management).
 
 ### Security debt
 
@@ -14,7 +14,7 @@ Some of this technical debt may have a security impact (for example, granting fu
 
 Keeping a register of these items as you go along is important. It will allow you to return and address them later. Consider how 'expensive' the [design decisions](https://www.ncsc.gov.uk/guidance/security-design-principles-digital-services-main) you make today will be later down the line.
 
-## Guidance
+## Actions
 
 * **Put [vulnerability management](https://www.ncsc.gov.uk/guidance/vulnerability-management) processes in place**  
   Where you use widely available software and hardware, you should be deploying patches and looking for known weak configurations.
@@ -29,7 +29,7 @@ Keeping a register of these items as you go along is important. It will allow yo
   After any event, carry out a [post-mortem](https://landing.google.com/sre/book/chapters/postmortem-culture.html) to help iterate your procedures and adapt your code. Sometimes it's possible to mitigate a whole class of vulnerabilities rather than having to do 'whack-a-mole' for each one. When possible, address the root cause. Seek out the point where the issue was introduced so you can learn from it.
 
 * **Provide a way for others to disclose security flaws to you**  
-  It should be possible for users and researchers to responsibly disclose security issues to you. This should be seen as a positive action - an attacker could have used the issue to do harm.
+  It should be possible for users and researchers to [responsibly disclose](https://www.ncsc.gov.uk/blog-post/vulnerability-co-ordination-pilot) security issues to you. This should be seen as a positive action - an attacker could have used the issue to do harm.
 
 * **Feed findings back into the [testing process](7-continually-test-your-security.md)**  
   Creating security tests for issues identified helps to gain confidence they will not occur again.

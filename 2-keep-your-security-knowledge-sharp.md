@@ -17,7 +17,7 @@ Teams armed with up to date information are much more likely to implement approp
   If they do not already have this knowledge, resources should be provided so that it can be gained. Examples may include standard injection techniques and handling [untrusted input](https://www.owasp.org/index.php/Injection_Theory).
 
 * **Use your developer recruitment process to screen for basic security awareness** 
-  Qualifications aren't the only way to establish this. Real world practical application is more important. If this isn't possible, allocate extra resources for security learning and development.
+  Qualifications aren't the only way to establish this. In fact, real world practical application is more important. If this isn't possible, allocate extra resources for security learning and development.
 
 * **Make time and resources available for ongoing learning** 
   Invest in training to develop security knowledge and skills.
@@ -28,7 +28,7 @@ Teams armed with up to date information are much more likely to implement approp
 * **Make developers accountable for the security of their code** 
   Most developers already take pride in their work - [security is everyone's concern](2-keep-your-security-knowledge-sharp.md).
 
-* **Be aware and consider when there is a particular need to write code defensively** 
+* **Be aware when there is a particular need to write code defensively** 
   Take extra time and care when implementing security critical components, writing your code defensively. For example, when validating input which may be attacker-controlled.
 
 * **Get your security specialists to outline **for developers** which **components are** security-critical (this should not be 'everything')** 
@@ -68,3 +68,4 @@ These examples are intended to help you assess your own practices, and those of 
 
 * [Secure design principles](https://www.ncsc.gov.uk/guidance/security-design-principles-digital-services-main)
 * [http://www.riscs.org.uk/wp-content/uploads/2015/12/Awareness-is-Only-the-First-Step.pdf](http://www.riscs.org.uk/wp-content/uploads/2015/12/Awareness-is-Only-the-First-Step.pdf)
+* [https://www.ncsc.gov.uk/cisp](https://www.ncsc.gov.uk/cisp)

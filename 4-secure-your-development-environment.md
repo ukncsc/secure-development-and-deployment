@@ -18,12 +18,11 @@ Where this is the case, it's important to recognise the onward impact that a com
 
 ### Security gained
 
-By performing the functions outlined in subsequent sections, you can help reduce the risk of an attacker:
+You can take actions to secure your development environment and reduce the risk of an attacker:
 
-*   stealing sensitive information (such as encryption and access keys, passwords or knowledge of security controls)
+*   stealing sensitive information (such as encryption and access keys, passwords, knowledge of security controls or intellectual property)
 *   embedding malicious code in your project without your knowledge
-*   using a compromised development device as a proxy to further attack your build and deployment pipeline, through to production
-*   stealing code for the intellectual property it contains, or to release it publicly, causing embarrassment or degrading your security
+*   using a compromised development device as a proxy to further attack your build and deployment pipeline, through to production 
 *   understanding how your sensitive applications work - a first step in the planning of an attack
 
 ### Securing a flexible system
@@ -44,7 +43,7 @@ The following measures can help you to understand and reduce these risks:
 
   If an attacker is able to compromise a developer's environment they will inherit the same level of permissions and access as that developer. Placing additional controls between your developer environments and critical systems will help to reduce this impact.
 
-  For example, the use of multi-factor authentication will make it harder for an attacker to leverage stolen credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.
+  For example, the use of multi-factor authentication will make it harder for an attacker who has compromised a device to leverage stolen keys, credentials and access tokens. Automated security testing and a multi-person review process as part of your deployment pipeline can help catch and prevent onward impact.
 
 * **Trust your developers, verify their actions**
 
@@ -56,7 +55,7 @@ The following measures can help you to understand and reduce these risks:
 ## Actions
 
 * **Provide developers with the tools and environment they need**  
-  Practical tooling is essential if you want to avoid technically savvy developers finding insecure workarounds. This may sometimes mean being a bit more tolerant to the risks of a developer device being compromised and putting wider protections in place to account for this. If an IT department can respond effectivley to software requests, it may be possible to avoid giving out local administrative permissions.
+  Practical tooling is essential if you want to avoid technically savvy developers finding insecure workarounds. This may sometimes mean being a bit more tolerant to the risks of a developer device being compromised and putting wider protections in place to account for this. If an IT department can respond effectively to software requests, it may be possible to avoid giving out local administrative permissions.
 
 * **Trust your developers, verify their actions**  
   Educate users and trust them to do the right thing. Implement functions to verify their activity, and to detect suspicious activity or potential compromise.
@@ -77,7 +76,7 @@ The following measures can help you to understand and reduce these risks:
   In the event that developer devices are compromised, constrain their onward access with wider network architecture controls that supports defence in depth. Examples may include firewall rule sets only permitting developer devices to communicate to intended services. Also consider the impact these services have on your developers. For example, non transparent proxies can hinder use of some technologies.
 
 * **Carry out protective monitoring of your development environment**  
-  You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentially, a compromise. For example, are strange websites being accessed and are priviledged actions being carried out during unusual hours of the day?
+  You should have an idea of what legitimate use of your environment looks like. Combining this knowledge with logging from your environment can help to detect illegitimate use or potentially, a compromise. For example, are strange websites being accessed and are privileged actions being carried out during unusual hours of the day?
 
 
 ## Self assessment

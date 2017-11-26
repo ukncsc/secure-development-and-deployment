@@ -14,7 +14,7 @@ Every team needs security expertise, but not everyone on the team needs to be a 
 
 During design and delivery, continuously ask questions, discuss and identify potential security issues and work together to deliver solutions. Embed this process within your 'normal' approach to product delivery.
 
-Security mistakes, and the associated security 'debt' which these entail, can be avoided if security is made part of everyday practice by your whole team. If this doesn't happen and security is considered as a 'bolt-on' once development is complete, then vulnerabilities may be missed and customer expectations may not be met. Both of these can lead to time-consuming and expensive re-working of code.
+Security mistakes, and the associated security 'debt' which these entail, can be avoided if security is made part of everyday practice by your whole team. If this doesn't happen and security is considered as a 'bolt-on' once development is complete, vulnerabilities may be missed and customer expectations may not be met. Both of these can lead to time-consuming and expensive re-working of code.
 
 Unfortunately, the security process is too often about achieving standards compliance and ticking boxes rather than delivering practical and pragmatic security outcomes. Developing a culture of encouraging people to ask questions and discuss potential security issues can help to overcome this.
 
@@ -35,7 +35,7 @@ Software development is a community activity. A healthy community should include
 
 ## Actions
 
-* **Define and articulate the requirements for security at the start and during product delivery**  
+* **Define and articulate the requirements for security at the start of and during product delivery**  
   Without this, security practices are unlikely to take hold and be given the priority they need. 'Top-down' support should be provided.
 
 * **Security is an essential skill for every member of the delivery team**  
@@ -65,11 +65,11 @@ Software development is a community activity. A healthy community should include
 
 ## Self assessment
 
-These examples are intended to help you assess your own practices, and those of your suppliers. The list below is not exhaustive.
+These examples are intended to help you assess your own practices, and those of your suppliers. The list below is not exhaustive and is not intended to be used as a checkbox exercise.
 
 | BAD | GOOD |
 |-----|------|
-| Security specialists do not consider the legitimate needs of the business alongside security. | Leaderships views spotting and fixing security issues as a positive. |
+| Security specialists do not consider the legitimate needs of the business alongside security. | Leadership views spotting and fixing security issues as a positive. |
 | Security requirements are often postponed to meet release deadlines, regardless of their impact. | Product engineering staff review security incidents and seek to learn from them. |
 | Developers hide their mistakes.| Security implications are considered at every sprint planning meeting. |
 | Developers do not take ownership of their code and seek to make security another person's responsibility. | There's top-down support for security within your organisation. |

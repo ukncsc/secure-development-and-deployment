@@ -14,8 +14,8 @@ Version control, peer review and built-in auditing are some of the advantages wh
 * **Choose a repository you trust**  
     Consider how the repository itself is administered and managed, including the underlying infrastructure. If the security of these components is compromised, it is difficult to assert trust in the code you store on it. If the repository is managed by a service provider, consider it against the NCSC [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection). Layering a process of cryptographic signing and verifying code on top of the repository can help to increase confidence that the code has not been tampered with.
 
-* **Limit exposure & access to your repository**  
-    Technically enforce a model of least privilege for who can read and make changes to your code repository. Only permitted individuals should be able to view and make changes, and all activity should be attributable. For some use cases, it may be appropriate to 'code in the open', but consider the impacts first.
+* **Consider the exposure of your repository**  
+    Technically enforce a model of least privilege for who can make changes to your code repository.  Make sure all activity is attributable.
 
 * **Protect access credentials**  
     User access to repositories is often authenticated using credentials, such as passwords or private keys. Loss of these credentials may allow an attacker to gain unauthorised access. Ensure that developers are encouraged to protect these credentials while they are used and managed within your development environment. Private keys should be password protected. Backing them onto a hardware token such as a [FIDO](https://fidoalliance.org/specifications/overview/) U2F Security Key makes them harder to abuse. Consider the option of rotating access keys.
@@ -26,8 +26,8 @@ Version control, peer review and built-in auditing are some of the advantages wh
 * **Access to the repository should be revoked swiftly when no longer required, or in the event of compromise**  
     As your team evolves over time it's crucial you stay on top of who should have access and who should not.
 
-* **When making code open, carefully consider whether any parts should remain confidential**  
-    Although open-sourcing of code provides many benefits, it may also have a security impact. For example, code used to detect attacks would be of particular benefit to an adversary wishing to evade such measures. Attackers may also be able to glean information useful in formulating a spear-phishing attack. Some of your code may be more appropriately stored in a private repository.
+* **Include open code in your risk model**
+    Some of your code may be more appropriately stored in a private repository. For example, code used to detect fraud attacks would be of particular benefit to an adversary wishing to avoid such measures. When coding in the open, there are a number of security best practices you can adopt, like automated testing and peer reviews.
 
 * **Review all code changes**  
     Certain code repositories or branches will hold the source code from which production deployments are made. Ensure that all code merged into this master version has gone through a review process to help prevent unintended or malicious code being included.
@@ -40,7 +40,7 @@ Version control, peer review and built-in auditing are some of the advantages wh
 
 * **Ensure your code is backed up**  
     Back up your code so it can be restored if anything bad happens to your repository.
-
+    
 
 ## Self assessment
 
@@ -53,7 +53,7 @@ These examples are intended to help you assess your own practices, and those of 
 | Code used to detect cyber compromise is published on a public code repository, giving attackers the ability to inspect how it works. |The code repository service chosen was given careful consideration (e.g. using the [Cloud Security Principles](https://www.ncsc.gov.uk/guidance/cloud-security-collection) to understand the risks of different options). |
 | Your code repository, hosted as a cloud service, adheres to bad security practices. | All code is reviewed before it is merged into the master version of the code repository. Extra care is taken if these code changes were submitted by an individual outside the development team. |
 | Leavers' accounts and permissions are not deleted or revoked. | Access to source code repositories is joined up with the leavers and joiners process of your organisation. |
-| Public profiles of key developers contain a large amount of personal information which could be used by an attacker to mount a convincing spear-phishing attack. | The accounts that developers use to access and modify your organisation's source code are periodically reviewed to assess potential risk. For example, through the public information available to an attacker and the security settings that are used on the accounts. |
+| Public profiles of key developers contain a large amount of personal information which could be used to mount a convincing spear-phishing attack. | The accounts that developers use to access and modify your organisation's source code are periodically reviewed to assess potential risk. For example, through the public information available to an attacker and the security settings that are used on the accounts. |
 
 
 ## Related advice
